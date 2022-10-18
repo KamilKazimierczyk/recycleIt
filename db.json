@@ -1,0 +1,44 @@
+{
+    "bin": [
+        {
+            "type":"paper",
+            "img":"../assets/paper_bin.webp"
+        },
+        {
+            "type":"plastic",
+            "img":"../assets/plastic_bin.webp"
+        },
+        {
+            "type":"organic",
+            "img":"../assets/organic_bin.webp"
+        },
+        {
+            "type":"metal",
+            "img":"../assets/metal_bin.webp"
+        },
+        {
+            "type":"glass",
+            "img":"../assets/glass_bin.webp"
+        },
+        {
+            "type":"ewaste",
+            "img":"../assets/ewaste_bin.webp"
+        }
+    ],
+    "garbage": [
+        {
+            "name":"Bateries",
+            "type": "ewaste"
+        },
+        {
+            "name":"News papper",
+            "type": "paper"
+        }
+    ],
+    "points": [
+        {
+            "name":"testowy wpis",
+            "points": 1337
+        }
+    ]
+}

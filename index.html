@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>RecycleIt</title>
+</head>
+<body>
+    <div class="container">
+        <div class="game_window">
+            <div class="start_screen">
+                <div class="content">
+                    <span class="title">RecycleIt</span>
+                    <input type="text" placeholder="Your nickname" id="name" />
+                    <button id="play">Play</button>
+                </div>
+                <img src="./assets/bg.webp" alt="backgorung"/>
+            </div>
+            <div class="game_screen">
+                <span class="title">RecycleIt</span>    
+                <div class="garbage_container"></div>
+                <div class="trash_containers"></div>
+                <img src="./assets/bg.webp" alt="backgorung"/>
+                <div class="time_wrapper"><span class="time"></span>s</div>
+                <div class="points_wrapper"><span class="points"></span>pts.</div>
+            </div>
+            <div id="notifications_wrapper"></div>
+        </div>
+    </div>
+    <script src="./src/Notification.class.js"></script>
+    <script src="./src/Garbage.class.js"></script>
+    <script src="./src/Bin.class.js"></script>
+    <script src="./src/Game.class.js"></script>
+    <script src="./src/index.js"></script>
+</body>
+</html>
