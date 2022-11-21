@@ -25,7 +25,11 @@ class Garbage {
         setTimeout(()=>{
             this.#item.classList.remove('hide');
         },2500)
-    } 
+    }
+
+    delete() {
+        this.#item.remove();
+    }
 
     #drawPosition() {
         let top = Math.floor(Math.random() * 100);

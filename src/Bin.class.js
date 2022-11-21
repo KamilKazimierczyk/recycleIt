@@ -2,6 +2,7 @@ class Bin{
     #type
     #wrapper = document.querySelector('.game_screen .trash_containers');
     #index
+    #item
 
     constructor(binData,index) {
         this.#type = binData.type;
@@ -12,6 +13,10 @@ class Bin{
 
     getType() {
         return this.#type;
+    }
+
+    delete(){
+        this.#item.remove();
     }
 
     #createDom(src) {
@@ -25,5 +30,7 @@ class Bin{
 
         wrapper.appendChild(image)
         this.#wrapper?.appendChild(wrapper);
+
+        this.#item = wrapper
     }
 }
