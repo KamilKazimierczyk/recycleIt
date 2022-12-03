@@ -23,7 +23,7 @@ class ScoreBoard{
     }
 
     async #getScores(){
-        const response = await fetch('http://localhost:3004/points')
+        const response = await fetch('http://localhost:3004/points?_sort=points&_order=desc')
             .then(data => data.json())
             .catch(err => console.error(err));
 

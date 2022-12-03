@@ -27,32 +27,42 @@
   ],
   "garbage": [
     {
-      "name": "Bateries",
+      "name": "Batteries",
       "type": "ewaste"
     },
     {
-      "name": "News papper",
+      "name": "Newspaper",
       "type": "paper"
     },
     {
-      "name": "Plastic bottels",
+      "name": "Plastic bottle",
       "type": "plastic"
     },
     {
-      "name": "Glass bottel",
+      "name": "Glass bottle",
       "type": "glass"
     }
   ],
   "points": [
     {
-      "id": 1,
-      "name": "testowy wpis",
-      "points": 1337
-    },
-    {
       "name": "kamil",
       "points": 20,
       "id": 2
+    },
+    {
+      "name": "test",
+      "points": 50,
+      "id": 3
+    },
+    {
+      "name": "Kamil",
+      "points": 20,
+      "id": 4
+    },
+    {
+      "name": "Kamil Kazimierczyk",
+      "points": 40,
+      "id": 5
     }
   ]
 }
