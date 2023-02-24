@@ -31,7 +31,35 @@
             "type": "ewaste"
         },
         {
-            "name":"News papper",
+            "name":"Newspaper",
+            "type": "paper"
+        },
+        {
+            "name":"Plastic bottle",
+            "type": "plastic"
+        },
+        {
+            "name":"Glass Bottles",
+            "type": "glass"
+        },
+        {
+            "name":"Cans",
+            "type": "metal"
+        },
+        {
+            "name":"Flattened Cardboard",
+            "type": "paper"
+        },
+        {
+            "name":"milk cartons",
+            "type": "plastic"
+        },
+        {
+            "name":"juice boxes",
+            "type": "plastic"
+        },
+        {
+            "name":"magazines",
             "type": "paper"
         }
     ],
