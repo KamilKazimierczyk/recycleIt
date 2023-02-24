@@ -10,6 +10,9 @@ playBtn?.addEventListener('click',() => {
         return false;
     }
 
-    gameObject = new Game(name);
+    document.querySelector('.scoreboard_wrapper')?.remove();
+
+    console.log(name)
+    new Game(name);
     document.querySelector('.game_window')?.classList.add('play');
 })

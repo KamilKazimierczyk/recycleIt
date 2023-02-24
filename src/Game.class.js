@@ -6,6 +6,7 @@ class Game {
     #pointsContainer = document.querySelector('span.points')
     #time = 0
     #timeContainer = document.querySelector('span.time')
+    #intervalId
     #settings = {
         defaultTime: 60,
         timePenalty: -10,
@@ -21,7 +22,12 @@ class Game {
 
     #changeTime(amount) {
         this.#time += amount;
+        if(this.#time <= 0) {
+            this.#lose();
+            this.#time = 0;
+        };
         this.#timeContainer.innerText = this.#time;
+
     }
 
     #changePoints(amount) {
@@ -76,6 +82,18 @@ class Game {
         }
     }
 
+    #lose(){
+        clearInterval(this.#intervalId)
+
+        this.#garbages.forEach(garbage => garbage.delete())
+
+        this.#bins.forEach(bin => bin.delete())
+
+        document.querySelector('.game_window')?.classList.remove('play');
+
+        new ScoreBoard(this.#playerName,this.#points)
+    }
+
     async #init(){
         await this.#fetchBins();
         await this.#fetchGarbages();
@@ -84,5 +102,6 @@ class Game {
         this.#changePoints(0)
 
         this.#setEvents();
+        this.#intervalId = setInterval(()=>this.#changeTime(-1),1000);
     }
 }

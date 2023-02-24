@@ -2,10 +2,10 @@
   "name": "recycleit",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js",
-    "database": "json-server --watch db.json --port 3004"
+    "start": "node app.js",
+    "db": "json-server --watch db.json --port 3004"
   },
   "author": "",
   "license": "ISC",
